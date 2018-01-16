@@ -8,19 +8,20 @@ Eric Greene - [http://t4d.io](http://t4d.io) - [LinkedIn](https://www.linkedin.c
 
 Class:
 
-- Tuesday and Wednesday: 9am to 4:30pm PDT
+- Thursday and Friday: 9am to 5pm PST
 
 Breaks:
 
 - Morning: 10:25am - 10:35am
 - Lunch: Noon to 1pm
-- Afternoon #1: 2:10pm - 2:20pm
-- Afternoon #2: 3:20pm - 3:30pm
+- Afternoon #1: 1:55pm - 2:05pm
+- Afternoon #2: 3:00pm - 3:10pm
+- Afternoon #3: 4:05pm - 4:15pm
 
 ## Course Outline
 
 - Day 1 - GraphQL Overview, Types, & Querys
-- Day 2 - Mutations and Introspections
+- Day 2 - Mutations and Introspections, Integration with React
 
 ## Links
 
