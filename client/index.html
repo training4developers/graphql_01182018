@@ -13,35 +13,67 @@
 
   <script>
 
-    const myFetch = (url) => {
+    // const myFetch = (url) => {
 
-      return new Promise((resolve, reject) => {
+    //   return new Promise((resolve, reject) => {
 
-        const xhr = new XMLHttpRequest();
+    //     const xhr = new XMLHttpRequest();
 
-        const cb = () => {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-            resolve(JSON.parse(xhr.responseText));
-          }
-        };
+    //     const cb = () => {
+    //       if (xhr.readyState === 4 && xhr.status === 200) {
+    //         resolve(JSON.parse(xhr.responseText));
+    //       }
+    //     };
 
-        console.dir(cb);
+    //     console.dir(cb);
 
-        xhr.addEventListener('readystatechange', cb);
+    //     xhr.addEventListener('readystatechange', cb);
 
-        xhr.open('GET',url);
-        xhr.send();
-      });
+    //     xhr.open('GET',url);
+    //     xhr.send();
+    //   });
 
-    };
+    // };
 
-    myFetch('http://localhost:3010/employees').then(results => console.log(results));
-
-
-    console.log('test');
+    // myFetch('http://localhost:3010/employees').then(results => console.log(results));
 
 
+    // console.log('test');
 
+    // const p = { firstName: 'Bob', lastName: 'Saget' };
+
+    // const { firstName, lastName } = p;
+
+    // // parameters
+    // function doIt({ firstName, lastName }) {
+
+    // }
+
+    // // pass arguments
+    // doIt({ firstName: 'Bob', lastName: 'Smith '});
+
+    // { firstName, lastName } = { firstName: 'Bob', lastName: 'Smith '}
+
+    // const p = {
+    //   firstName: 'Bob',
+    //   lastName: 'Smith',
+    //   address: { street: '123 Oak Lane', country: 'CA' }
+    // };
+
+    // const firstName = '3';
+    // const { firstName: fn, address: { street } } = p;
+
+    // const fn = firstName
+    // const { street } = address;
+
+    // console.log(street)
+
+
+    // function doIt(a,b,...c) {
+
+    // }
+
+    // doIt(...[1,2,3,4,5]);
 
   </script>
 </body>

@@ -8,6 +8,13 @@ export const oneEmployeeById = id =>
   fetch(`http://localhost:3010/employees/${encodeURIComponent(id)}`)
     .then(res => res.json());
 
+export const insertEmployee = employee =>
+  fetch('http://localhost:3010/employees', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(employee),
+  }).then(res => res.json());
+
 export const allBooks = () =>
   fetch('http://localhost:3010/books')
     .then(res => res.json());
