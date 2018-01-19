@@ -15,6 +15,7 @@ export const employeeType = new GraphQLObjectType({
     age: {
       type: GraphQLInt,
     },
+
   },
 
 });

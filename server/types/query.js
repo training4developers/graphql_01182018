@@ -4,10 +4,12 @@ import {
 
 import { employeeType } from './employee';
 
-const employees = [
-  { id: 1, firstName: 'Bob', lastName: 'Smith', age: 34 },
-  { id: 2, firstName: 'Jane', lastName: 'Thomas', age: 45 },
-];
+// const employees = [
+//   { id: 1, firstName: 'Bob', lastName: 'Smith', age: 34 },
+//   { id: 2, firstName: 'Jane', lastName: 'Thomas', age: 45 },
+// ];
+
+import { getAllEmployees } from '../database';
 
 export const query = new GraphQLObjectType({
 
@@ -16,7 +18,7 @@ export const query = new GraphQLObjectType({
   fields: {
     employees: {
       type: new GraphQLList(employeeType),
-      resolve: () => employees,
+      resolve: () => getAllEmployees(),
     },
     employee: {
       type: employeeType,
@@ -27,7 +29,7 @@ export const query = new GraphQLObjectType({
         }
       },
       resolve: (_, args) => {
-        return employees.find(e => e.id === args.id);
+        //  return employees.find(e => e.id === args.id);
       },
     }
   },
