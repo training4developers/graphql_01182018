@@ -43,4 +43,12 @@ export const allBooksByGenre = genre =>
 export const allBooksByAuthorId = authorId =>
   fetch(`http://localhost:3010/books?authorId=${encodeURIComponent(authorId)}`)
     .then(res => res.json());
+ 
+export const deleteBoot = id => {
+  fetch('http://localhost:3010/books/' + id)
+    .then(res => res.json())
+    .then(book => { 
+      return fetch('http://localhost:3010/books/' + id, { method: 'DELETE' }).then(() => book);
+    });
+}    
   

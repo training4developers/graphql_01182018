@@ -1,12 +1,14 @@
 import http from 'http';
 import express from 'express';
 import graphqlHttp from 'express-graphql';
-
+import cors from 'cors';
 import { schema } from './schema';
 
 const port = 3020;
 
 const app = express();
+
+app.use(cors());
 
 app.use('/', graphqlHttp({
   schema,
