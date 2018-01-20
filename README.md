@@ -37,6 +37,8 @@ Breaks:
 ### Other Resources
 
 - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+- [React Tutorial](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/Web%20Frameworks/React/Session%202%20-%20Hands%20On)
+- [GraphQL Tutorial](https://www.howtographql.com/)
 - [JavaScript Air Podcast](http://javascriptair.podbean.com/)
 - [Speaking JavaScript](http://speakingjs.com/es5/)
 - [TC39 Process - Feature Stages](http://www.2ality.com/2015/11/tc39-process.html)

@@ -23,4 +23,4 @@ const server = http.createServer(app);
 
 server.listen(port, () => {
   console.log(`widgets graphql server stated on port ${port}`);
-});
+});   
